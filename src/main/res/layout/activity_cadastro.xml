@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".cadastro">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:srcCompat="@drawable/blur_gradient"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Cadastro de série"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="257dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Adicione todas as informações necessárias para cadastrar essa série."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="348dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#FB2B3F"
+        android:text="Clique para adicionar imagem"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título da série:"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="349dp"
+        android:layout_height="45dp"
+        android:width="wrap_content"
+        android:height="150dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:foregroundTint="#FFFFFF"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="353dp"
+        android:layout_height="189dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Sinopse:"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="178dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FB2B3F"
+        android:text="Cancelar"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FB2B3F"
+        android:text="Cadastrar"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
