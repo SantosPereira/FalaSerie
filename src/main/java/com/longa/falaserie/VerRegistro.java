@@ -10,5 +10,10 @@ public class VerRegistro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver_registro);
+
+        Bundle bundle = getIntent().getExtras();
+        String valor = bundle.getString("Série");
+
+        System.out.println(valor);
     }
 }

@@ -10,42 +10,58 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="197dp"
         android:fontFamily="@font/montserrat_bold"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="2dp"
         android:layout_height="14dp"
+        android:layout_marginTop="297dp"
         android:fontFamily="@font/montserrat"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="297dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="305dp"
         android:layout_height="64dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="53dp"
         android:backgroundTint="#FB2B3F"
         android:text="Editar"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="185dp"
         android:fontFamily="@font/montserrat"
         android:text="Apagar"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="635dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

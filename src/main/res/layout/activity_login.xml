@@ -124,4 +124,13 @@
         app:layout_constraintEnd_toStartOf="@+id/linkCadUsuario"
         app:layout_constraintTop_toBottomOf="@+id/botaoEntrar" />
 
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="botao"
+        android:text="Button"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="78dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

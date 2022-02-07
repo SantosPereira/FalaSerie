@@ -7,95 +7,135 @@
     android:background="@drawable/bg"
     tools:context=".Listagem">
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="411dp"
-        android:layout_height="732dp"
-        app:srcCompat="@drawable/blur_gradient"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-3dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_gradient"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/onceuponatime"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="359dp" />
+        <ImageView
+            android:id="@+id/botaoPesquisa"
+            android:layout_width="47dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/group_1055" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/haunting_of_by_manor"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="544dp" />
+        <ImageView
+            android:id="@+id/logoListagem"
+            android:layout_width="164dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="129dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/cadastrarNovaSerie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/thesociety"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="358dp" />
+        <Button
+            android:id="@+id/cadastrarNovaSerie"
+            android:layout_width="339dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="#F44336"
+            android:onClick="cadastrarSerie"
+            android:text="Cadastrar série nova"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/cadastrarNovaSerie"
-        android:layout_width="339dp"
-        android:layout_height="64dp"
-        android:backgroundTint="#F44336"
-        android:text="Cadastrar série nova"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="212dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Suas séries cadastradas:"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastrarNovaSerie" />
 
-    <ImageView
-        android:id="@+id/logoListagem"
-        android:layout_width="154dp"
-        android:layout_height="95dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="80dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Suas séries cadastradas:"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="301dp" />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lacasadepapel"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="544dp" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/_3reasonswhy"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="358dp" />
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:onClick="verSerie"
+                        app:srcCompat="@drawable/onceuponatime" />
 
-    <ImageView
-        android:id="@+id/botaoPesquisa"
-        android:layout_width="47dp"
-        android:layout_height="26dp"
-        app:srcCompat="@drawable/group_1055"
-        tools:layout_editor_absoluteX="348dp"
-        tools:layout_editor_absoluteY="25dp" />
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/haunting_of_by_manor" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/sabrina"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="545dp" />
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/thesociety" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/lacasadepapel" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/_3reasonswhy" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/sabrina" />
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
