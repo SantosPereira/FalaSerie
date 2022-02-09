@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".Login">
+    tools:context=".ViewModel.Login">
 
     <ImageView
         android:id="@+id/logo"
@@ -104,7 +104,6 @@
         android:layout_marginTop="6dp"
         android:layout_marginEnd="120dp"
         android:clickable="true"
-        android:onClick="telaCadastroUsuario"
         android:text="Inscreva-se aqui."
         android:textColor="#FFFFFF"
         android:textSize="10sp"
@@ -123,14 +122,5 @@
         android:textSize="10sp"
         app:layout_constraintEnd_toStartOf="@+id/linkCadUsuario"
         app:layout_constraintTop_toBottomOf="@+id/botaoEntrar" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="botao"
-        android:text="Button"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="78dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

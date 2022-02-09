@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".Cadastro">
+    tools:context=".ViewModel.Cadastro">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -31,69 +31,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="169dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="28dp"
-            android:layout_marginBottom="41dp"
-            android:backgroundTint="#FB2B3F"
-            android:onClick="cadastrar"
-            android:text="Cadastrar"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <EditText
-            android:id="@+id/editTextTextMultiLine2"
-            android:layout_width="349dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="60dp"
-            android:height="150dp"
-            android:backgroundTint="#FFFFFF"
-            android:ems="10"
-            android:foregroundTint="#FFFFFF"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine3"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="178dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="41dp"
-            android:backgroundTint="#FB2B3F"
-            android:text="Cancelar"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button3"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="46dp"
-            android:fontFamily="@font/montserrat"
-            android:text="Sinopse:"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine3"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="46dp"
-            android:text="Título da série:"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine2"
-            app:layout_constraintStart_toStartOf="parent" />
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="257dp"
@@ -114,25 +51,111 @@
             android:id="@+id/button"
             android:layout_width="348dp"
             android:layout_height="51dp"
-            android:layout_marginStart="31dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="60dp"
             android:backgroundTint="#FB2B3F"
             android:text="Clique para adicionar imagem"
             android:textAllCaps="false"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine2"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextTextMultiLine3"
-            android:layout_width="353dp"
-            android:layout_height="189dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="32dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="Título da série:"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="347dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#9E9E9E"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="349dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="24dp"
+                android:height="150dp"
+                android:backgroundTint="#00FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Sinopse:"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="346dp"
+            android:layout_height="184dp"
+            android:layout_marginBottom="36dp"
+            android:backgroundTint="#9E9E9E"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine3"
+                android:layout_width="353dp"
+                android:layout_height="189dp"
+                android:backgroundTint="#9E9E9E"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textAlignment="viewStart" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="178dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="41dp"
+            android:backgroundTint="#FB2B3F"
+            android:text="Cancelar"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="169dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="41dp"
+            android:backgroundTint="#FB2B3F"
+            android:onClick="cadastrar"
+            android:text="Cadastrar"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

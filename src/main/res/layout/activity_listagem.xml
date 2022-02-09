@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".Listagem">
+    tools:context=".ViewModel.Listagem">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -95,6 +95,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="7dp"
+                        android:onClick="verSerie"
                         app:srcCompat="@drawable/haunting_of_by_manor" />
 
                     <ImageView
@@ -102,6 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="7dp"
+                        android:onClick="verSerie"
                         app:srcCompat="@drawable/thesociety" />
 
                 </TableRow>
@@ -115,6 +117,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="7dp"
+                        android:onClick="verSerie"
                         app:srcCompat="@drawable/lacasadepapel" />
 
                     <ImageView
@@ -122,6 +125,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="7dp"
+                        android:onClick="verSerie"
                         app:srcCompat="@drawable/_3reasonswhy" />
 
                     <ImageView
@@ -129,6 +133,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="7dp"
+                        android:onClick="verSerie"
                         app:srcCompat="@drawable/sabrina" />
                 </TableRow>
 
